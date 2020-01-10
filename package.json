@@ -2,7 +2,19 @@
   "name": "ant-design-pro-from-scratch",
   "version": "1.0.0",
   "description": "Learn ant-design-pro from scratch.",
+  "keywords": [
+    "react",
+    "webpack",
+    "typescript",
+    "babel",
+    "sass",
+    "hmr",
+    "ant-design-pro"
+  ],
   "repository": "https://github.com/foomango/ant-design-pro-from-scratch.git",
   "author": "Fengwei Wang",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "echo Todo:"
+  }
 }
