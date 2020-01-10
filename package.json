@@ -15,6 +15,7 @@
   "author": "Fengwei Wang",
   "license": "MIT",
   "scripts": {
-    "test": "echo Todo:"
+    "test": "echo Todo:",
+    "ci": "yarn test"
   }
 }
