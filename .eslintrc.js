@@ -5,19 +5,19 @@ const eslintrc = {
     'plugin:jest/recommended',
     'plugin:react/recommended',
     'plugin:import/typescript',
-    'prettier/react'
+    'prettier/react',
   ],
   env: {
     browser: true,
     node: true,
     jasmine: true,
     jest: true,
-    es6: true
+    es6: true,
   },
   settings: {
     react: {
-      version: '16.9'
-    }
+      version: '16.9',
+    },
   },
   parser: '@typescript-eslint/parser',
   plugins: [
@@ -26,16 +26,16 @@ const eslintrc = {
     'babel',
     'jest',
     '@typescript-eslint',
-    'prettier'
+    'prettier',
   ],
   // https://github.com/typescript-eslint/typescript-eslint/issues/46#issuecomment-470486034
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
       rules: {
-        '@typescript-eslint/no-unused-vars': [2, { args: 'none' }]
-      }
-    }
+        '@typescript-eslint/no-unused-vars': [2, { args: 'none' }],
+      },
+    },
   ],
   rules: {
     camelcase: 0,
@@ -45,29 +45,30 @@ const eslintrc = {
     'react/jsx-indent': 0,
     'react/jsx-wrap-multilines': [
       'error',
-      { declaration: false, assignment: false }
+      { declaration: false, assignment: false },
     ],
     'import/extensions': 0,
     'import/no-extraneous-dependencies': [
       'error',
       {
         devDependencies: [
+          'config/webpack/**',
+          'express.js',
           'site/**',
           'tests/**',
           'scripts/**',
           '**/*.test.js',
           '**/__tests__/*',
           '*.config.js',
-          '**/*.md'
-        ]
-      }
+          '**/*.md',
+        ],
+      },
     ],
     'jsx-a11y/no-static-element-interactions': 0,
     'jsx-a11y/anchor-has-content': 0,
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/anchor-is-valid': 0,
     'jsx-a11y/no-noninteractive-element-interactions': 0,
-    'comma-dangle': ['error', 'always-multiline'],
     'react/jsx-filename-extension': 0,
     'react/state-in-constructor': 0,
     'react/jsx-props-no-spreading': 0,
@@ -98,11 +99,11 @@ const eslintrc = {
     'react/static-property-placement': 0,
     'jest/no-test-callback': 0,
     'jest/expect-expect': 0,
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
   },
   globals: {
-    gtag: true
-  }
+    gtag: true,
+  },
 }
 
 module.exports = eslintrc
